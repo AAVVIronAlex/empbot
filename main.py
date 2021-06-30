@@ -31,6 +31,12 @@ def waka(message):
 @bot.message_handler(commands=["about"])
 def hello(message):
     bot.send_message(message.chat.id, "EarthMapsPictures Corporation!")
-
+    
+    
+@bot.message_handler(commands=["start"])
+def hello(message):
+    bot.send_message(message.chat.id, "Hello I am EarthMapsPictures Bot made mainly by Alex Babajanyan and Gegham Zakaryan. The Official EarthMapsPictures Website: https://earthmapspictures.weebly.com/")
+    bot.send_message(message.chat.id, "Type /help to see what I can do 😎🔥😂")
+    
 
 bot.polling()
