@@ -31,6 +31,7 @@ def waka(message):
 @bot.message_handler(commands=["about"])
 def hello(message):
     bot.send_message(message.chat.id, "Copyright EarthMapsPictures Corporation 2015-2021")
+    bot.send_message(message.chat.id, "Developed by @alexthegreatish and @zakaryan2004")
     
     
 @bot.message_handler(commands=["start"])
