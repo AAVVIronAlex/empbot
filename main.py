@@ -1,5 +1,5 @@
 import os
-import telebot
+import telegraf
 
 API_KEY = os.getenv('API_KEY')
 bot = telebot.TeleBot(API_KEY)
