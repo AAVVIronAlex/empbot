@@ -1,5 +1,6 @@
 import os
 import telebot
+import random
 from dotenv import load_dotenv
 
 load_dotenv("config.env")
@@ -7,6 +8,7 @@ load_dotenv("config.env")
 bot_token = os.getenv("BOT_TOKEN")
 bot = telebot.TeleBot(bot_token)
 
+jokes = ["I was her semicolon but... One day She decided to switch to Python", "Overflow", "rocks"]
 
 @bot.message_handler(commands=["greet"])
 def greet(message):
@@ -29,13 +31,13 @@ def waka(message):
 
 
 @bot.message_handler(commands=["about"])
-def hello(message):
+def about(message):
     bot.send_message(message.chat.id, "Copyright EarthMapsPictures Corporation 2015-2021")
     bot.send_message(message.chat.id, "Developed by @alexthegreatish and @zakaryan2004")
     
     
 @bot.message_handler(commands=["start"])
-def hello(message):
+def start(message):
     bot.send_message(message.chat.id, "Hello I am EarthMapsPictures Bot. The Official EarthMapsPictures Website: https://earthmapspictures.weebly.com/")
     bot.send_message(message.chat.id, "Type /help to see what I can do!")
     
@@ -50,5 +52,13 @@ def hello(message):
     bot.send_message(message.chat.id, "Upgrade to EMP Bot Premium to see this message.")
     bot.send_message(message.chat.id, "Answer?")
     bot.send_message(message.chat.id, "Oh yeah sorry. We dont have Premium its completely free to do anything with EMP Bot! That was a EA joke Pay to Play get it?")
+    
+@bot.message_handler(commands=["wakamasters"])
+def wakamasters(message):
+    bot.send_message(message.chat.id, "Waka Masters Forever!")
+    
+@bot.message_handler(commands=["joke"])
+def joke(message):
+    bot.send_message(message.chat.id, random.choice(jokes))
     
 bot.polling()
