@@ -8,7 +8,7 @@ load_dotenv("config.env")
 bot_token = os.getenv("BOT_TOKEN")
 bot = telebot.TeleBot(bot_token)
 
-jokes = ["I was her semicolon but... One day She decided to switch to Python", "Overflow", "rocks"]
+jokes = ["I was her semicolon but...    One day She decided to switch to Python.", "I'm on a seafood diet....   I see food and I wanna eat it.", "*Dad thinks you are gaming on the pc* Dad: Are you winning, son?  There is no winning with these syntax errors dad!"]
 
 @bot.message_handler(commands=["greet"])
 def greet(message):
