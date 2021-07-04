@@ -15,15 +15,19 @@ adjectives = ['sleepy', 'slow', 'smelly', 'wet', 'fat', 'red', 'orange', 'yellow
 nouns = ['apples', 'dinosaur', 'ball', 'toaster', 'goat', 'dragon', 'hammer', 'duck', 'panda', 'telephone', 'banana', 'teacher']
 colours = ['blue', 'red', 'green', 'yellow', 'purple', 'magenta', 'black', 'white', 'orange', 'cyan', 'brown', 'silver', 'gold']
 
-while True:
-    for num in range(3):
-        adjective = random.choice(adjectives)
-        noun = random.choice(nouns)
-        number = random.randrange(0, 100)
-        colour = random.choice(colours)
-        special_char = random.choice(string.punctuation)
+for num in range(3):
+    adjective = random.choice(adjectives)
+    noun = random.choice(nouns)
+    number = random.randrange(0, 100)
+    colour = random.choice(colours)
+    special_char = random.choice(string.punctuation)
 
+password = adjective + colour + noun + str(number) + special_char
 
+@bot.message_handler(commands=["newpassword"])
+def newpassword(message):
+    bot.reply_to(message, "Your password is: %s")
+    bot.reply_to(message, password)
 
 @bot.message_handler(commands=["greet"])
 def greet(message):
