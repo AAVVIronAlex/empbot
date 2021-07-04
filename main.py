@@ -26,7 +26,7 @@ password = adjective + colour + noun + str(number) + special_char
 
 @bot.message_handler(commands=["newpassword"])
 def newpassword(message):
-    bot.reply_to(message, "Your password is: %s")
+    bot.reply_to(message, "Your password is:")
     bot.reply_to(message, password)
 
 @bot.message_handler(commands=["greet"])
