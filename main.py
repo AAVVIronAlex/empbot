@@ -11,6 +11,10 @@ bot = telebot.TeleBot(bot_token)
 
 jokes = ["I was her semicolon but...    One day She decided to switch to Python.", "I'm on a seafood diet....   I see food and I wanna eat it.", "*Dad thinks you are gaming on the pc* Dad: Are you winning, son?  There is no winning with these syntax errors dad!"]
 
+adjectives = ['sleepy', 'slow', 'smelly', 'wet', 'fat', 'red', 'orange', 'yellow', 'green', 'blue', 'purple', 'fluffy', 'white', 'proud', 'brave']
+nouns = ['apples', 'dinosaur', 'ball', 'toaster', 'goat', 'dragon', 'hammer', 'duck', 'panda', 'telephone', 'banana', 'teacher']
+colours = ['blue', 'red', 'green', 'yellow', 'purple', 'magenta', 'black', 'white', 'orange', 'cyan', 'brown', 'silver', 'gold']
+
 
 
 @bot.message_handler(commands=["greet"])
