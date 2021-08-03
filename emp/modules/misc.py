@@ -88,3 +88,7 @@ def wakamasters(message):
 @bot.message_handler(commands=["joke"])
 def joke(message):
     bot.send_message(message.chat.id, random.choice(JOKES))
+
+@bot.message_handler(commands=["alex"])
+def alex(message):
+    bot.send_message(message.chat.id, "Alex has lost over 500GBs of data and is trying to recover it he is busy don't bother him for free recovery software please DM him on any platform. Thanks.")
