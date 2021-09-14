@@ -1,9 +1,6 @@
 from emp import bot
 import random
 import string
-from pyrogram import  Client, filters
-from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
-import os
 from html import escape
 
 # CONSTANTS
@@ -95,16 +92,3 @@ def joke(message):
 @bot.message_handler(commands=["alex"])
 def alex(message):
     bot.send_message(message.chat.id, "Alex has lost over 500GBs of data and is trying to recover it he is busy don't bother him for free recovery software please DM him on any platform. Thanks.")
-
-    @bot.on_message(filters.private & filters.command(["start"]))
-async def start(bot, update):
-    TEXT = "Hai {} \n\n**I Am Password Generator Bot. I Can Generate Strong Passwords At Your Wish Length (Max. 84).** \n\nFor Know More /help"
-    BUTTONS = InlineKeyboardMarkup([[InlineKeyboardButton("Channel 🔰", url = "https://telegram.me/EKBOTZ_UPDATE"),InlineKeyboardButton("Support Group ⭕️", url = "https://telegram.me/ekbotz_support")],[InlineKeyboardButton("Repo 🗂️", url = "https://github.com/M-fazin/Password-Generator-Bot"),InlineKeyboardButton("Deploy 🗃️", url = "https://heroku.com/deploy?template=https://github.com/M-fazin/Password-Generator-Bot")],[InlineKeyboardButton("Developer 💡", url = "https://github.com/M-fazin/")]])
-    await update.reply_text(
-        text=TEXT.format(update.from_user.mention),
-        reply_markup=BUTTONS,
-        disable_web_page_preview=True,
-        quote=True
-    )
-
-    #Password Generator Rev.2
