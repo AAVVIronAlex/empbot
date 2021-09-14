@@ -108,34 +108,3 @@ async def start(bot, update):
     )
 
     #Password Generator Rev.2
-    
-@bot.on_message(filters.private & filters.command(["help"]))
-async def help(bot, update):
-    HELP = "Hello, I am EMP Bot password creator Rev. 2.0. \nMaximum Send Digit limit a random password will be generated in that limit. \nAllowed Digits Till 84"
-   
-    await update.reply_text(
-        text=HELP.format(update.from_user.mention),
-        reply_markup=HELP_BUTTON,
-        disable_web_page_preview=True,
-        quote=True
-        )
-	
-@bot.on_message(filters.private & filters.text)
-async def password(bot, message):
-    password = "QWERTYUIOPASDFGHJKLZXCVBNM1234567890abcdefghijklmnopqrstuvwxyz1234567890!@#$%^&*()_+"
-    try:
-       limit = int(message.text)
-    except:
-       pass    
-    if limit >= 85 or limit <= 0:
-        text = "Sorry... Failed To Create Password Because Limit is 1 to 84"
-    else:
-        randomValue = random.sample(password, limit)
-        randomValue = "".join(randomValue)
-        text = f"**Your Password Generated Succesfully.** \nYour Password Limit : `{limit}`. \nPassword 👇 :- \n`{randomValue}` "
-      
-    await message.reply_text(text, True)
-	
-
-			
-bot.run()
