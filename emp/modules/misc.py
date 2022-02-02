@@ -12,6 +12,18 @@ JOKES = [
 ]
 ADJECTIVES = [
     "sleepy",
+    "happy",
+    "gross",
+    "faster",
+    "dusty",
+    "cool",
+    "messy",
+    "mischievous",
+    "garrulous",
+    "long",
+    "cold",
+    "hot",
+    "warm",
     "slow",
     "smelly",
     "wet",
@@ -29,6 +41,17 @@ ADJECTIVES = [
 ]
 NOUNS = [
     "apples",
+    "dog",
+    "cat",
+    "skyscraper",
+    "house",
+    "garden",
+    "pen",
+    "pencil",
+    "car",
+    "music",
+    "computer",
+    "mouse"
     "dinosaur",
     "ball",
     "toaster",
@@ -55,6 +78,8 @@ COLOURS = [
     "brown",
     "silver",
     "gold",
+    "aqua",
+    "aquamarine",
 ]
 
 
