@@ -82,6 +82,7 @@ COLOURS = [
     "aquamarine",
 ]
 
+# Add a calculator
 
 @bot.message_handler(commands=["newpassword"])
 def newpassword(message):
