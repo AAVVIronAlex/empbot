@@ -38,6 +38,8 @@ ADJECTIVES = [
     "white",
     "proud",
     "brave",
+    "proud",
+    "beutiful",
 ]
 NOUNS = [
     "apples",
