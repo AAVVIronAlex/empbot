@@ -96,8 +96,7 @@ def newpassword(message):
 
     password = adjective + colour + noun + str(number) + special_char
 
-    bot.reply_to
-    (
+    bot.reply_to(
         message,
         f"Your password is: <code>{escape(password)}</code>",
         parse_mode="HTML",
