@@ -123,15 +123,14 @@ def alex(message):
     bot.send_message(message.chat.id, "Alex has lost over 500GBs of data and is trying to recover it he is busy don't bother him for free recovery software please DM him on any platform. Thanks.")
     
 # newpassword 2.0
-lower = "abcdefghijklmnopqrstuvwxyz"
-upper = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
-numbers = "0123456789"
-symbols = "!@#$%^&*()_+-=<>,.?/;:"
-
-string = lower + upper + numbers + symbols
-length = 16
-password = "".join(random.sample(string, length))
-
 @bot.message_handler(commands=["newpasswordultra"])
 def newpassword_ultra_2(message):
+    lower = "abcdefghijklmnopqrstuvwxyz"
+    upper = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+    numbers = "0123456789"
+    symbols = "!@#$%^&*()_+-=<>,.?/;:"
+
+    string = lower + upper + numbers + symbols
+    length = 16
+    password = "".join(random.sample(string, length))
     bot.send_message("Your password is:" + password)
