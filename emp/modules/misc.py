@@ -133,4 +133,3 @@ def newpassword_ultra_2(message):
     length = 16
     password = "".join(random.sample(string, length))
     bot.send_message(message.chat.id, "Your password is: " + password)
-    #bot.send_message(message.chat.id, password)
