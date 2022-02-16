@@ -1,4 +1,5 @@
 from emp import bot
+import string
 import random
 
 girls = ['Ավագյան Նարե',
