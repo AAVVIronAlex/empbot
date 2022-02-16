@@ -201,4 +201,4 @@ girls = ["Ավագյան Նարե",
 @bot.message_handler(commands=["givemeagirl"])
 def givemeagirl(message):
   target = random.choice(girls)
-  bot.send_message(message, target)
+  bot.send_message(message.chat.id, target)
