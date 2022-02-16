@@ -59,4 +59,8 @@ girls = ['Ավագյան Նարե',
 
 target = random.choice(girls)
 
-print("Your target f=girl is:", target)
+#print("Your target f=girl is:", target)
+
+@bot.message_handler(commands=["givemeagirl"])
+def givemeagirl(message):
+  bot.send_message(message.chat.id, target)
