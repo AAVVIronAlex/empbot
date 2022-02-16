@@ -63,4 +63,4 @@ target = random.choice(girls)
 
 @bot.message_handler(commands=["givemeagirl"])
 def givemeagirl(message):
-  bot.send_message(message.chat.id, target)
+  bot.send_message(message, target)
