@@ -58,8 +58,6 @@ girls = ["Ավագյան Նարե",
 "Հայրապետյան Մարիամ",
 "Գրիգորյան Լիա"]
 
-#print("Your target f=girl is:", target)
-
 @bot.message_handler(commands=["givemeagirl"])
 def givemeagirl(message):
   target = random.choice(girls)
