@@ -134,6 +134,11 @@ def random_message(message):
 def general(message):
     bot.send_message(message.chat.id, "https://www.youtube.com/watch?v=w0m0hTrtlWM&t=28s")
 
+@bot.message_handler(commands=["sati"])
+def sati(message):
+    bot.send_message(message.chat.id, "https://www.instagram.com/satie_94_/")
+    bot.send_message(message.chat.id, "https://www.facebook.com/profile.php?id=100006147124818")
+  
 # newpassword 2.0
 @bot.message_handler(commands=["newpasswordultra"])
 def newpassword_ultra_2(message):
