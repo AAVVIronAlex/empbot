@@ -128,7 +128,7 @@ def alex(message):
     
 @bot.message_handler(commands=["random"])
 def random_message(message):
-    bot.send_message(message.chat.id, "Mary, my brother, my age is blowing in my chest. I must be ☝️ from the beginning, but you are who I am ☝️ I don't know what to say about me, but I don't want to tell you anything but me ☝️ There is no problem, but you are not")
+    bot.send_message(message.chat.id, "Mary, my brother, my age is blowing in my chest. I must be from the beginning, but you are who I am I don't know what to say about me, but I don't want to tell you anything but me There is no problem, but you are not")
     
 # newpassword 2.0
 @bot.message_handler(commands=["newpasswordultra"])
