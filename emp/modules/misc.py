@@ -126,6 +126,10 @@ def joke(message):
 def alex(message):
     bot.send_message(message.chat.id, "Alex has lost over 500GBs of data and is trying to recover it he is busy don't bother him for free recovery software please DM him on any platform. Thanks.")
     
+@bot.message_handler(commands=["random"])
+def random_message(message):
+    bot.send_message(message.chat.id, "Mary, my brother, my age is blowing in my chest. I must be ☝️ from the beginning, but you are who I am ☝️ I don't know what to say about me, but I don't want to tell you anything but me ☝️ There is no problem, but you are not")
+    
 # newpassword 2.0
 @bot.message_handler(commands=["newpasswordultra"])
 def newpassword_ultra_2(message):
