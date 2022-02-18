@@ -130,8 +130,8 @@ def alex(message):
 def random_message(message):
     bot.send_message(message.chat.id, "Mary, my brother, my age is blowing in my chest. I must be from the beginning, but you are who I am I don't know what to say about me, but I don't want to tell you anything but me There is no problem, but you are not")
     
-@bot.message_handler(commands=["random"])
-def random_message(message):
+@bot.message_handler(commands=["general"])
+def general(message):
     bot.send_message(message.chat.id, "https://www.youtube.com/watch?v=w0m0hTrtlWM&t=28s")
 
 # newpassword 2.0
