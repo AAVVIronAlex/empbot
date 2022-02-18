@@ -15,4 +15,4 @@ music = [
 @bot.message_handler(commands=["randommusic"])
 def randommusic(message):
     target = random.choice(music)
-    bot.send_message(message.chat.id, music)
+    bot.send_message(message.chat.id, target)
