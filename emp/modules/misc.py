@@ -43,6 +43,7 @@ ADJECTIVES = [
     "brave",
     "proud",
     "beutiful",
+    "extreme",
 ]
 
 NOUNS = [
