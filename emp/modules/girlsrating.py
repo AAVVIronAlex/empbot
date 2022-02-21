@@ -68,13 +68,13 @@ zero_star = ["Ղահրամանյան Ինգա"]
 
 @bot.message_handler(commands = ["ratedgirl5"])
 def rated_girl5(message):
-  target = random.choice(message.chat.id, five_star)
-  bot.send_message(target)
+  target = random.choice(five_star)
+  bot.send_message(message.chat.id, target)
 
 @bot.message_handler(commands = ["ratedgirl4"])
 def rated_girl4(message):
-  target = random.choice(message.chat.id, four_star)
-  bot.send_message(target)
+  target = random.choice(four_star)
+  bot.send_message(message.chat.id, target)
 
 @bot.message_handler(commands = ["ratedgirl3"])
 def rated_girl3(message):
