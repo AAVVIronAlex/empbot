@@ -58,9 +58,15 @@ girls = ["Ավագյան Նարե",
 "Հայրապետյան Մարիամ",
 "Գրիգորյան Լիա"]
 
-five_star = ["Խանլարի Արինե", "Թադևոսյան Արփինե", "Ավագյան Եվա"]
+# Add if this if that in Version 2.8+
+
+@bot.message_handler(commands = ["girlsrating"])
+def girlsrating(message):
+  bot.send_message(message.chat.id, "This is a program made to make it easier to choose a girl to dance with. The program for the girls will be out in a few weeks. Commands: /givemeagirl, and if you are confident that your score matches the girl you want try /ratedgirl<score> score = [0, 1, 2, 3, 4, 5]. More accurate scores will come with the 3rd update.")
+
+five_star = ["Խանլարի Արինե", "Ավագյան Եվա", "Պետրոսյան Արփինե"]
 four_star = ["Տեր-Հարությունյան Սաթի", "Պետրոսյան Լյուդմիլա", "Գաբրիելյան Սյուզաննա", "Թամարյան Միլենա", "Ստեփանյան Հռիփսիմե", "Մանուկյան Մարինե", "Մախմուրյան Սիրանուշ"]
-three_star = ["Դավթյան Էլինա", "Վարդանյան Եվա", "Առաքելյան Իրեն", "Չիլինգարյան Անի", "Այվազյան Եվա", "Օհանյան Աննա", "Պետրոսյան Արփինե", "Գյոզալյան Տաթև", "Սիմոնյան Արփի", 
+three_star = ["Դավթյան Էլինա", "Վարդանյան Եվա", "Առաքելյան Իրեն", "Չիլինգարյան Անի", "Այվազյան Եվա", "Օհանյան Աննա", "Թադևոսյան Արփինե", "Գյոզալյան Տաթև", "Սիմոնյան Արփի", 
 "Թորոսյան Անի", "Հայրիյան Էմիլյա"]
 two_star = ["Խոջաբագյան Ելենա", "Շերոյան Մագդալենա", "Մուրադյան Ամելի", "Օհանյան Թամարա", "Ավագյան Ռադհիկա", "Ամարյան Կարինա", "Բազեյան Եվա"]
 one_star = ["Այվազյան Ժաննա", "Թադևոսյան Ծովինար"]
