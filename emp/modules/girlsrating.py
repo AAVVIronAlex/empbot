@@ -97,39 +97,80 @@ boys = [
 
 @bot.message_handler(commands = ["girlsrating"])
 def girlsrating(message):
-  bot.send_message(message.chat.id, "This is a program made to make it easier to choose a girl to dance with. The program for the girls will be out in a few weeks. Commands: /givemeagirl, and if you are confident that your score matches the girl you want try /ratedgirl<score> score = [0, 1, 2, 3, 4, 5]. More accurate scores will come with the 3rd update.")
+  bot.send_message(message.chat.id, "This is a program made to make it easier to choose a girl to dance with. \n For boy users enter /boysrating to take you to the boy randomiser menu. \n Commands: /givemeagirl, and if you are confident that your score matches the girl you want try /ratedgirl<score> score = [0, 1, 2, 3, 4, 5]. \n More accurate scores will come with the 3rd update.")
 
-five_star = ["Խանլարի Արինե", "Ավագյան Եվա", "Պետրոսյան Արփինե"]
-four_star = ["Տեր-Հարությունյան Սաթի", "Պետրոսյան Լյուդմիլա", "Գաբրիելյան Սյուզաննա", "Թամարյան Միլենա", "Ստեփանյան Հռիփսիմե", "Մանուկյան Մարինե", "Մախմուրյան Սիրանուշ"]
-three_star = ["Դավթյան Էլինա", "Վարդանյան Եվա", "Առաքելյան Իրեն", "Չիլինգարյան Անի", "Այվազյան Եվա", "Օհանյան Աննա", "Թադևոսյան Արփինե", "Գյոզալյան Տաթև", "Սիմոնյան Արփի", 
+@bot.message_handler(commands = ["girlsrating"])
+def girlsrating(message):
+  bot.send_message(message.chat.id, "This is a program made to make it easier to choose a boy to dance with. \n For boy users enter /girlsrating to take you to the girl randomiser menu. \n Commands: /givemeaboy, and if you are confident that your score matches the boy you want try /ratedboy<score> score = [0, 1, 2, 3, 4, 5]. \n More accurate scores will come with the 3rd update.")
+
+boys_five_star = []
+boys_four_star = []
+boys_three_star = []
+boys_two_star = []
+boys_one_star = []
+
+girls_five_star = ["Խանլարի Արինե", "Ավագյան Եվա", "Պետրոսյան Արփինե"]
+girls_four_star = ["Տեր-Հարությունյան Սաթի", "Պետրոսյան Լյուդմիլա", "Գաբրիելյան Սյուզաննա", "Թամարյան Միլենա", "Ստեփանյան Հռիփսիմե", "Մանուկյան Մարինե", "Մախմուրյան Սիրանուշ"]
+girls_three_star = ["Դավթյան Էլինա", "Վարդանյան Եվա", "Առաքելյան Իրեն", "Չիլինգարյան Անի", "Այվազյան Եվա", "Օհանյան Աննա", "Թադևոսյան Արփինե", "Գյոզալյան Տաթև", "Սիմոնյան Արփի", 
 "Թորոսյան Անի", "Հայրիյան Էմիլյա", "Ղահրամանյան Ինգա"]
-two_star = ["Խոջաբագյան Ելենա", "Շերոյան Մագդալենա", "Մուրադյան Ամելի", "Օհանյան Թամարա", "Ավագյան Ռադհիկա", "Ամարյան Կարինա", "Բազեյան Եվա"]
-one_star = ["Այվազյան Ժաննա", "Թադևոսյան Ծովինար"]
+girls_two_star = ["Խոջաբագյան Ելենա", "Շերոյան Մագդալենա", "Մուրադյան Ամելի", "Օհանյան Թամարա", "Ավագյան Ռադհիկա", "Ամարյան Կարինա", "Բազեյան Եվա"]
+girls_one_star = ["Այվազյան Ժաննա", "Թադևոսյան Ծովինար"]
+
+# Rated girls
 
 @bot.message_handler(commands = ["ratedgirl5"])
 def rated_girl5(message):
-  target = random.choice(five_star)
+  target = random.choice(girls_five_star)
   bot.send_message(message.chat.id, target)
 
 @bot.message_handler(commands = ["ratedgirl4"])
 def rated_girl4(message):
-  target = random.choice(four_star)
+  target = random.choice(girls_four_star)
   bot.send_message(message.chat.id, target)
 
 @bot.message_handler(commands = ["ratedgirl3"])
 def rated_girl3(message):
-  target = random.choice(three_star)
+  target = random.choice(girls_three_star)
   bot.send_message(message.chat.id, target)
 
 @bot.message_handler(commands = ["ratedgirl2"])
 def rated_girl2(message):
-  target = random.choice(two_star)
+  target = random.choice(girls_two_star)
   bot.send_message(message.chat.id, target)
 
 @bot.message_handler(commands = ["ratedgirl1"])
 def rated_girl1(message):
-  target = random.choice(one_star)
+  target = random.choice(girls_one_star)
   bot.send_message(message.chat.id, target)
+
+# Rated boys
+
+@bot.message_handler(commands = ["ratedboy5"])
+def rated_boy5(message):
+  target = random.choice(boys_five_star)
+  bot.send_message(message.chat.id, target)
+
+@bot.message_handler(commands = ["ratedboy4"])
+def rated_boy4(message):
+  target = random.choice(boys_four_star)
+  bot.send_message(message.chat.id, target)
+
+@bot.message_handler(commands = ["ratedboy3"])
+def rated_boy3(message):
+  target = random.choice(boys_three_star)
+  bot.send_message(message.chat.id, target)
+
+@bot.message_handler(commands = ["ratedboy2"])
+def rated_boy2(message):
+  target = random.choice(boys_two_star)
+  bot.send_message(message.chat.id, target)
+
+@bot.message_handler(commands = ["ratedboy1"])
+def rated_boy1(message):
+  target = random.choice(boys_one_star)
+  bot.send_message(message.chat.id, target)
+
+# Fully Random
 
 @bot.message_handler(commands = ["givemeagirl"])
 def givemeagirl(message):
