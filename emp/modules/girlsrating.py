@@ -105,6 +105,7 @@ def boysrating(message):
 
 # Getting ready for version 3.0
 
+_50_ = []
 _49_ = ["Խանլարի Արինե", "Ավագյան Եվա"]
 _48_ = []
 _47_ = []
