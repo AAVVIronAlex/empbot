@@ -171,7 +171,17 @@ girls_three_star = ["Դավթյան Էլինա", "Վարդանյան Եվա", "�
 girls_two_star = ["Խոջաբագյան Ելենա", "Շերոյան Մագդալենա", "Մուրադյան Ամելի", "Օհանյան Թամարա", "Ավագյան Ռադհիկա", "Ամարյան Կարինա", "Բազեյան Եվա"]
 girls_one_star = ["Այվազյան Ժաննա", "Թադևոսյան Ծովինար"]
 
-# Rated girls
+# Next gen rated (Version 3.x)
+
+def insert_your_rating(user_input):
+    answer = "Your rating is: " + user_input
+    return answer
+
+def reply(update, context):
+    user_input = update.message.text
+    update.message.reply_text(insert_your_rating(user_input))
+
+# Rated girls (Version 2.x)
 
 @bot.message_handler(commands = ["ratedgirl5"])
 def rated_girl5(message):
@@ -198,7 +208,7 @@ def rated_girl1(message):
   target = random.choice(girls_one_star)
   bot.send_message(message.chat.id, target)
 
-# Rated boys
+# Rated boys (Version 2.x)
 
 @bot.message_handler(commands = ["ratedboy5"])
 def rated_boy5(message):
@@ -225,7 +235,7 @@ def rated_boy1(message):
   target = random.choice(boys_one_star)
   bot.send_message(message.chat.id, target)
 
-# Fully Random
+# Fully Random (Version 1.x)
 
 @bot.message_handler(commands = ["givemeagirl"])
 def givemeagirl(message):
