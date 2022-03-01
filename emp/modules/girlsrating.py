@@ -175,8 +175,8 @@ girls_one_star = ["Այվազյան Ժաննա", "Թադևոսյան Ծովին�
 
 @bot.message_handler(commands = ["targetgirl5"])
 def target_girl5(message):
-  chance = [16, 16, 16, 16, 16, 16, 1, 1, 1, 1]
-  girls_5 = [_50_, _49_, _48_, _47_, _46_, _45_, girls_four_star, girls_three_star, girls_two_star, girls_one_star]
+  chance = [14, 14, 14, 14, 14, 14, 14, 1, 1,]
+  girls_5 = [_50_, _49_, _48_, _47_, _46_, _45_, "Ավագյան Եվա", girls_four_star, girls_three_star]
   target = random.choices(girls_5, chance, k = 1000)
   bot.send_message(message.chat.id, target)
 
@@ -245,3 +245,5 @@ def givemeagirl(message):
 def givemeaboy(message):
   target = random.choice(boys)
   bot.send_message(message.chat.id, target)
+
+#Cheat codes
