@@ -173,7 +173,7 @@ girls_one_star = ["Այվազյան Ժաննա", "Թադևոսյան Ծովին�
 
 # Next gen rated (Version 3.x)
 
-@bot.message_handler(commands = ["targrtgirl5"])
+@bot.message_handler(commands = ["targetgirl5"])
 def rated_girl5(message):
   chance = [16, 16, 16, 16, 16, 16, 1, 1, 1, 1]
   girls_5 = [_50_, _49_, _48_, _47_, _46_, _45_, girls_four_star, girls_three_star, girls_two_star, girls_one_star]
