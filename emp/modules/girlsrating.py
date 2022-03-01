@@ -247,3 +247,34 @@ def givemeaboy(message):
   bot.send_message(message.chat.id, target)
 
 #Cheat codes
+
+@bot.message_handler(commands = ["pleaseme"])
+def pleaseme(message):
+  target = ["Խանլարի Արինե"]
+  bot.send_message(message.chat.id, target)
+
+@bot.message_handler(commands = ["disappointme"])
+def disappointme(message):
+  target = ["Առաքելյան Իրեն"]
+  bot.send_message(message.chat.id, target)
+
+@bot.message_handler(commands = ["givemeaverage"])
+def disappointme(message):
+  averages = ["Գաբրիելյան Սյուզաննա",
+  "Ստեփանյան Հռիփսիմե",
+  "Դավթյան Էլինա", "Վարդանյան Եվա",
+  "Առաքելյան Իրեն",
+  "Չիլինգարյան Անի",
+  "Այվազյան Եվա",
+  "Օհանյան Աննա",
+  "Թադևոսյան Արփինե",
+  "Գյոզալյան Տաթև", 
+  "Սիմոնյան Արփի", 
+  "Թորոսյան Անի", 
+  "Հայրիյան Էմիլյա", 
+  "Մուրադյան Ամելի", 
+  "Օհանյան Թամարա", 
+  "Ավագյան Ռադհիկա", 
+  "Ամարյան Կարինա"]
+  target = random.choice(averages)
+  bot.send_message(message.chat.id, target)
