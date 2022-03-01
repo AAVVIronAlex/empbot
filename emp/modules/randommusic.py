@@ -14,7 +14,7 @@ music = [
     "https://youtu.be/XoJ6TPUG1Tk"
 ]
 
-@bot.message_handler(commands=["randommusic"])
+@bot.message_handler(commands = ["randommusic"])
 def randommusic(message):
     target = random.choice(music)
     bot.send_message(message.chat.id, target)
