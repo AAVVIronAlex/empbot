@@ -173,13 +173,12 @@ girls_one_star = ["Այվազյան Ժաննա", "Թադևոսյան Ծովին�
 
 # Next gen rated (Version 3.x)
 
-def insert_your_rating(user_input):
-    answer = "Your rating is: " + user_input
-    return answer
-
-def reply(update, context):
-    user_input = update.message.text
-    update.message.reply_text(insert_your_rating(user_input))
+@bot.message_handler(commands = ["targrtgirl5"])
+def rated_girl5(message):
+  chance = [16, 16, 16, 16, 16, 16, 1, 1, 1, 1]
+  girls_5 = [_50_, _49_, _48_, _47_, _46_, _45_, girls_four_star, girls_three_star, girls_two_star, girls_one_star]
+  target = random.choice(girls_5, chance, k = 1000)
+  bot.send_message(message.chat.id, target)
 
 # Rated girls (Version 2.x)
 
