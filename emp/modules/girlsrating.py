@@ -177,7 +177,7 @@ girls_one_star = ["Այվազյան Ժաննա", "Թադևոսյան Ծովին�
 def target_girl5(message):
   chance = [14, 14, 14, 14, 14, 14, 14, 1, 1]
   girls_5 = [_50_, _49_, _48_, _47_, _46_, _45_, "Ավագյան Եվա", girls_four_star, girls_three_star]
-  target = random.choices(girls_5, chance)
+  target = random.choices(girls_5, chance, k = 1000)
   bot.send_message(message.chat.id, target)
 
 # Rated girls (Version 2.x)
