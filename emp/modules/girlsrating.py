@@ -194,6 +194,13 @@ def target_girl3(message):
   target = random.choices(girls_3, chance, k = 100)
   bot.send_message(message.chat.id, target)
 
+@bot.message_handler(commands = ["targetgirl2"])
+def target_girl2(message):
+  chance = [9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 5, 5]
+  girls_2 = [_24_, _23_, _22_, _21_, _20_, _19_, _18_, _17_, _16_, _15_, girls_three_star, girls_one_star]
+  target = random.choices(girls_2, chance, k = 100)
+  bot.send_message(message.chat.id, target)
+
 # Rated girls (Version 2.x)
 
 @bot.message_handler(commands = ["ratedgirl5"])
