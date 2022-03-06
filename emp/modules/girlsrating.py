@@ -97,11 +97,11 @@ boys = [
 
 @bot.message_handler(commands = ["girlsrating"])
 def girlsrating(message):
-  bot.send_message(message.chat.id, "This is a program made to make it easier to choose a girl to dance with. \n For boy users enter /boysrating to take you to the boy randomiser menu. \n Commands: /givemeagirl \n And if you are confident that your score matches the girl you want try \n /ratedgirl<score> score = [0, 1, 2, 3, 4, 5]. \n More accurate scores will come with the 3rd update.")
+  bot.send_message(message.chat.id, "This is a program made to make it easier to choose a girl to dance with. \n For boy users enter /boysrating to take you to the boy randomiser menu. \n Commands: /givemeagirl \n And if you are confident that your score matches the girl you want try \n /ratedgirl<score> score = [0, 1, 2, 3, 4, 5]. \n For the more accurate results \n try /targetgirl<score>  score = [0, 1, 2, 3, 4, 5].")
 
 @bot.message_handler(commands = ["boysrating"])
 def boysrating(message):
-  bot.send_message(message.chat.id, "This is a program made to make it easier to choose a boy to dance with. \n For boy users enter /girlsrating to take you to the girl randomiser menu. \n Commands: /givemeaboy. \n And if you are confident that your score matches the boy you want try \n /ratedboy<score> score = [0, 1, 2, 3, 4, 5]. \n More accurate scores will come with the 3rd update.")
+  bot.send_message(message.chat.id, "This is a program made to make it easier to choose a boy to dance with. \n For boy users enter /girlsrating to take you to the girl randomiser menu. \n Commands: /givemeaboy. \n And if you are confident that your score matches the boy you want try \n /ratedboy<score> score = [0, 1, 2, 3, 4, 5]. \n More accurate scores will come with the 3rd update. Working on the 3rd update now...")
 
 # Getting ready for version 3.0
 
