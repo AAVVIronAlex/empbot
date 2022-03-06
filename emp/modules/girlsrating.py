@@ -254,7 +254,7 @@ def target_girl1(message):
 def target_boy5(message):
   chance = [14, 14, 14, 14, 14, 14, 14, 1, 1]
   boys_5 = [_50_boys, _49_boys, _48_boys, _47_boys, _46_boys, _45_boys, boys_two_star, boys_four_star, boys_three_star]
-  target = random.choices(boys_5, chance, k = 1000)
+  target = random.choices(boys_5, chance, k = 100)
   bot.send_message(message.chat.id, target)
 
 @bot.message_handler(commands = ["targetboy4"])
