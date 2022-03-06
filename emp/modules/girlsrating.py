@@ -219,7 +219,7 @@ girls_one_star = ["Այվազյան Ժաննա", "Թադևոսյան Ծովին�
 def target_girl5(message):
   chance = [14, 14, 14, 14, 14, 14, 14, 1, 1]
   girls_5 = [_50_girls, _49_girls, _48_girls, _47_girls, _46_girls, _45_girls, "Ավագյան Եվա", girls_four_star, girls_three_star]
-  target = random.choices(girls_5, chance, k = 100)
+  target = random.choices(girls_5, chance, k = 1000)
   bot.send_message(message.chat.id, target)
 
 @bot.message_handler(commands = ["targetgirl4"])
