@@ -105,57 +105,99 @@ def boysrating(message):
 
 # Getting ready for version 3.0
 
-_50_ = []
-_49_ = ["Խանլարի Արինե", "Ավագյան Եվա"]
-_48_ = []
-_47_ = []
-_46_ = ["Պետրոսյան Արփինե"]
-_45_ = []
-_44_ = ["Մախմուրյան Սիրանուշ"]
-_43_ = []
-_42_ = []
-_41_ = []
-_40_ = []
-_39_ = ["Ստեփանյան Հռիփսիմե"]
-_38_ = ["Թամարյան Միլենա"]
-_37_ = ["Պետրոսյան Լյուդմիլա", "Մանուկյան Մարինե"]
-_36_ = ["Տեր-Հարությունյան Սաթի"]
-_35_ = ["Գաբրիելյան Սյուզաննա"]
-_34_ = ["Դավթյան Էլինա", "Չիլինգարյան Անի", "Հայրիյան Էմիլյա"]
-_33_ = ["Վարդանյան Եվա", "Այվազյան Եվա"]
-_32_ = ["Օհանյան Աննա"]
-_31_ = ["Թադևոսյան Արփինե", "Գյոզալյան Տաթև"]
-_30_ = []
-_29_ = ["Առաքելյան Իրեն"]
-_28_ = ["Թորոսյան Անի"]
-_27_ = ["Ղահրամանյան Ինգա"]
-_26_ = ["Սիմոնյան Արփի"]
-_25_ = []
-_24_ = ["Խոջաբագյան Ելենա"]
-_23_ = ["Շերոյան Մագդալենա"]
-_22_ = ["Օհանյան Թամարա"]
-_21_ = ["Բազեյան Եվա"]
-_20_ = ["Ավագյան Ռադհիկա"]
-_19_ = []
-_18_ = ["Ամարյան Կարինա"]
-_17_ = []
-_16_ = []
-_15_ = ["Մուրադյան Ամելի"]
-_14_ = []
-_13_ = []
-_12_ = ["Թադևոսյան Ծովինար"]
-_11_ = []
-_10_ = ["Այվազյան Ժաննա"]
-_09_ = []
-_08_ = []
-_07_ = []
-_06_ = []
-_05_ = []
-_04_ = []
-_03_ = []
-_02_ = []
-_01_ = []
-_00_ = []
+_50_girls = []
+_49_girls = ["Խանլարի Արինե", "Ավագյան Եվա"]
+_48_girls = []
+_47_girls = []
+_46_girls = ["Պետրոսյան Արփինե"]
+_45_girls = []
+_44_girls = ["Մախմուրյան Սիրանուշ"]
+_43_girls = []
+_42_girls = []
+_41_girls = []
+_40_girls = []
+_39_girls = ["Ստեփանյան Հռիփսիմե"]
+_38_girls = ["Թամարյան Միլենա"]
+_37_girls = ["Պետրոսյան Լյուդմիլա", "Մանուկյան Մարինե"]
+_36_girls = ["Տեր-Հարությունյան Սաթի"]
+_35_girls = ["Գաբրիելյան Սյուզաննա"]
+_34_girls = ["Դավթյան Էլինա", "Չիլինգարյան Անի", "Հայրիյան Էմիլյա"]
+_33_girls = ["Վարդանյան Եվա", "Այվազյան Եվա"]
+_32_girls = ["Օհանյան Աննա"]
+_31_girls = ["Թադևոսյան Արփինե", "Գյոզալյան Տաթև"]
+_30_girls = []
+_29_girls = ["Առաքելյան Իրեն"]
+_28_girls = ["Թորոսյան Անի"]
+_27_girls = ["Ղահրամանյան Ինգա"]
+_26_girls = ["Սիմոնյան Արփի"]
+_25_girls = []
+_24_girls = ["Խոջաբագյան Ելենա"]
+_23_girls = ["Շերոյան Մագդալենա"]
+_22_girls = ["Օհանյան Թամարա"]
+_21_girls = ["Բազեյան Եվա"]
+_20_girls = ["Ավագյան Ռադհիկա"]
+_19_girls = []
+_18_girls = ["Ամարյան Կարինա"]
+_17_girls = []
+_16_girls = []
+_15_girls = ["Մուրադյան Ամելի"]
+_14_girls = []
+_13_girls = []
+_12_girls = ["Թադևոսյան Ծովինար"]
+_11_girls = []
+_10_girls = ["Այվազյան Ժաննա"]
+_09_girls = []
+_08_girls = []
+_07_girls = []
+_06_girls = []
+_05_girls = []
+
+_50_boys = []
+_49_boys = []
+_48_boys = []
+_47_boys = []
+_46_boys = []
+_45_boys = []
+_44_boys = []
+_43_boys = []
+_42_boys = []
+_41_boys = []
+_40_boys = []
+_39_boys = []
+_38_boys = []
+_37_boys = []
+_36_boys = []
+_35_boys = []
+_34_boys = []
+_33_boys = []
+_32_boys = []
+_31_boys = []
+_30_boys = []
+_29_boys = []
+_28_boys = []
+_27_boys = []
+_26_boys = []
+_25_boys = []
+_24_boys = []
+_23_boys = []
+_22_boys = []
+_21_boys = []
+_20_boys = []
+_19_boys = []
+_18_boys = []
+_17_boys = []
+_16_boys = []
+_15_boys = []
+_14_boys = []
+_13_boys = []
+_12_boys = []
+_11_boys = []
+_10_boys = []
+_09_boys = []
+_08_boys = []
+_07_boys = []
+_06_boys = []
+_05_boys = []
 
 # Get ready for version 4.0
 
@@ -176,36 +218,71 @@ girls_one_star = ["Այվազյան Ժաննա", "Թադևոսյան Ծովին�
 @bot.message_handler(commands = ["targetgirl5"])
 def target_girl5(message):
   chance = [14, 14, 14, 14, 14, 14, 14, 1, 1]
-  girls_5 = [_50_, _49_, _48_, _47_, _46_, _45_, "Ավագյան Եվա", girls_four_star, girls_three_star]
+  girls_5 = [_50_girls, _49_girls, _48_girls, _47_girls, _46_girls, _45_girls, "Ավագյան Եվա", girls_four_star, girls_three_star]
   target = random.choices(girls_5, chance, k = 1000)
   bot.send_message(message.chat.id, target)
 
 @bot.message_handler(commands = ["targetgirl4"])
 def target_girl4(message):
   chance = [9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 5, 5]
-  girls_3 = [_44_, _43_, _42_, _41_, _40_, _39_, _38_, _37_, _36_, _35_, girls_five_star, girls_three_star]
+  girls_3 = [_44_girls, _43_girls, _42_girls, _41_girls, _40_girls, _39_girls, _38_girls, _37_girls, _36_girls, _35_girls, girls_five_star, girls_three_star]
   target = random.choices(girls_3, chance, k = 100)
   bot.send_message(message.chat.id, target)
 
 @bot.message_handler(commands = ["targetgirl3"])
 def target_girl3(message):
   chance = [9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 5, 5]
-  girls_3 = [_34_, _33_, _32_, _31_, _30_, _29_, _28_, _27_, _26_, _25_, girls_four_star, girls_three_star]
+  girls_3 = [_34_girls, _33_girls, _32_girls, _31_girls, _30_girls, _29_girls, _28_girls, _27_girls, _26_girls, _25_girls, girls_four_star, girls_three_star]
   target = random.choices(girls_3, chance, k = 100)
   bot.send_message(message.chat.id, target)
 
 @bot.message_handler(commands = ["targetgirl2"])
 def target_girl2(message):
   chance = [9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 5, 5]
-  girls_2 = [_24_, _23_, _22_, _21_, _20_, _19_, _18_, _17_, _16_, _15_, girls_three_star, girls_one_star]
+  girls_2 = [_24_girls, _23_girls, _22_girls, _21_girls, _20_girls, _19_girls, _18_girls, _17_girls, _16_girls, _15_girls, girls_three_star, girls_one_star]
   target = random.choices(girls_2, chance, k = 100)
   bot.send_message(message.chat.id, target)
 
 @bot.message_handler(commands = ["targetgirl1"])
 def target_girl1(message):
   chance = [9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 5, 5]
-  girls_1 = [_14_, _13_, _12_, _11_, _10_, _09_, _08_, _07_, _06_, _05_, girls_two_star, girls_three_star]
+  girls_1 = [_14_girls, _13_girls, _12_girls, _11_girls, _10_girls, _09_girls, _08_girls, _07_girls, _06_girls, _05_girls, girls_two_star, girls_three_star]
   target = random.choices(girls_1, chance, k = 100)
+  bot.send_message(message.chat.id, target)
+
+@bot.message_handler(commands = ["targetboy5"])
+def target_boy5(message):
+  chance = [14, 14, 14, 14, 14, 14, 14, 1, 1]
+  boys_5 = [_50_boys, _49_boys, _48_boys, _47_boys, _46_boys, _45_boys, boys_two_star, boys_four_star, boys_three_star]
+  target = random.choices(boys_5, chance, k = 1000)
+  bot.send_message(message.chat.id, target)
+
+@bot.message_handler(commands = ["targetboy4"])
+def target_boy4(message):
+  chance = [9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 5, 5]
+  boys_3 = [_44_boys, _43_boys, _42_boys, _41_boys, _40_boys, _39_boys, _38_boys, _37_boys, _36_boys, _35_boys, boys_five_star, boys_three_star]
+  target = random.choices(boys_3, chance, k = 100)
+  bot.send_message(message.chat.id, target)
+
+@bot.message_handler(commands = ["targetboy3"])
+def target_boy3(message):
+  chance = [9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 5, 5]
+  boys_3 = [_34_boys, _33_boys, _32_boys, _31_boys, _30_boys, _29_boys, _28_boys, _27_boys, _26_boys, _25_boys, boys_four_star, boys_three_star]
+  target = random.choices(boys_3, chance, k = 100)
+  bot.send_message(message.chat.id, target)
+
+@bot.message_handler(commands = ["targetboy2"])
+def target_boy2(message):
+  chance = [9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 5, 5]
+  boys_2 = [_24_boys, _23_boys, _22_boys, _21_boys, _20_boys, _19_boys, _18_boys, _17_boys, _16_boys, _15_boys, boys_three_star, boys_one_star]
+  target = random.choices(boys_2, chance, k = 100)
+  bot.send_message(message.chat.id, target)
+
+@bot.message_handler(commands = ["targetboy1"])
+def target_boy1(message):
+  chance = [9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 5, 5]
+  boys_1 = [_14_boys, _13_boys, _12_boys, _11_boys, _10_boys, _09_boys, _08_boys, _07_boys, _06_boys, _05_boys, boys_two_star, boys_three_star]
+  target = random.choices(boys_1, chance, k = 100)
   bot.send_message(message.chat.id, target)
 
 # Rated girls (Version 2.x)
