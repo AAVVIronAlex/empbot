@@ -152,3 +152,7 @@ def newpassword_ultra_2(message):
     length = 16
     password = "".join(random.sample(string, length))
     bot.send_message(message.chat.id, "Your password is: " + password)
+
+@bot.message_handler(commands = ["contact"])
+def contact(message):
+    bot.send_message(message.chat.id, "Telegram - @alexthegreatish \nFacebook - https://www.facebook.com/profile.php?id=100009196180783 \nGitHub - https://github.com/AAVVIronAlex \nInstagram - https://www.instagram.com/earthmapspictures/ \nReddit - https://www.reddit.com/user/AAVVIronAlex \nSpaceHey - https://spacehey.com/earthmapspictures \nTwitter - https://twitter.com/thealexgreater \nSpotify - https://open.spotify.com/user/1ygoezonte4i1hs73yj0qv0nb?si=dd1f41e818ba4cd5 \nYouTube - https://www.youtube.com/channel/UCcsUDEJ6HCUDSgT1gmEtxNQ/about \nMail - alex.babajanyan2015@gmail.com")
