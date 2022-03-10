@@ -351,7 +351,7 @@ def givemeaboy(message):
   target = random.choice(boys)
   bot.send_message(message.chat.id, target)
 
-#Cheat codes
+# Cheat codes
 
 @bot.message_handler(commands = ["pleaseme"])
 def pleaseme(message):
