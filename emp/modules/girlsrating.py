@@ -358,6 +358,11 @@ def pleaseme(message):
   target = ["Խանլարի Արինե"]
   bot.send_message(message.chat.id, target)
 
+@bot.message_handler(commands = ["impressme"])
+def impressme(message):
+  target = ["Ավագյան Եվա"]
+  bot.send_message(message.chat.id, target)
+
 @bot.message_handler(commands = ["disappointme"])
 def disappointme(message):
   target = ["Առաքելյան Իրեն"]
