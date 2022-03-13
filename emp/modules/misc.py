@@ -167,4 +167,4 @@ def mathexam(message):
     seconds = (mnight - now).seconds
     days    = (futdate - today).days
     hms     = str(datetime.timedelta(seconds = seconds))
-    bot.send_message(message.chat.id, "%d days %s" % (days, hms))
+    bot.send_message(message.chat.id, "Time remaining until exam is:", "%d Days %s" % (days, hms))
