@@ -160,11 +160,22 @@ def contact(message):
 
 @bot.message_handler(commands = "mathexam")
 def mathexam(message):
-    today   = datetime.date.today()
+    today = datetime.date.today()
     futdate = datetime.date(2022, 7, 15)
-    now     = datetime.datetime.now()
-    mnight  = now.replace(hour = 0, minute = 0, second = 0, microsecond = 0)
+    now = datetime.datetime.now()
+    mnight = now.replace(hour = 0, minute = 0, second = 0, microsecond = 0)
     seconds = (mnight - now).seconds
-    days    = (futdate - today).days
-    hms     = str(datetime.timedelta(seconds = seconds))
-    bot.send_message(message.chat.id, "Time remainiing until the exam is: %d days %s" % (days, hms))
+    days = (futdate - today).days
+    hms = str(datetime.timedelta(seconds = seconds))
+    bot.send_message(message.chat.id, "Time remainiing until the math exam is: %d days %s" % (days, hms))
+
+@bot.message_handler(commands = "physicsexam")
+def mathexam(message):
+    today = datetime.date.today()
+    futdate = datetime.date(2022, 7, 16)
+    now = datetime.datetime.now()
+    mnight = now.replace(hour = 0, minute = 0, second = 0, microsecond = 0)
+    seconds = (mnight - now).seconds
+    days = (futdate - today).days
+    hms = str(datetime.timedelta(seconds = seconds))
+    bot.send_message(message.chat.id, "Time remainiing until the physics exam is: %d days %s" % (days, hms))
