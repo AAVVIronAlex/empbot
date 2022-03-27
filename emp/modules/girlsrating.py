@@ -370,7 +370,7 @@ def disappointme(message):
 
 @bot.message_handler(commands = ["contributors"])
 def contributors(message):
-  bot.send_message(message.chat.id, "Alex Babajanyan (@alexthegreatish), Vahagn Sargsyan, Sergey Shahmuradyan, Davit Gevorkyan(@DGtheBest), Tigran Danielyan(@tigranesthegreatish), Anri Chillingaryan(@AKS74U_Krinkov), Hrant Yakobean, Vazgen Bakhtiaryan(@CallMeLew), Edmond Saroyan, Alex Khachikyan(@NaN1NaN1NaN), Michael Papyan(@Michael_Papyan), Areg Avetisyan, and the Waka Masters")
+  bot.send_message(message.chat.id, "Alex Babajanyan (@alexthegreatish), Vahagn Sargsyan, Sergey Shahmuradyan, Davit Gevorkyan(@DGtheBest), Tigran Danielyan(@tigranesthegreatish), Anri Chillingaryan(@avtomat_enjoyer), Hrant Yakobean, Vazgen Bakhtiaryan(@CallMeLew), Edmond Saroyan, Alex Khachikyan(@NaN1NaN1NaN), Michael Papyan(@Michael_Papyan), Areg Avetisyan, and the Waka Masters")
 
 @bot.message_handler(commands = ["givemeaverage"])
 def disappointme(message):
