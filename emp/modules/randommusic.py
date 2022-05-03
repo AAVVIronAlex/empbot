@@ -58,7 +58,8 @@ music = [
     "https://www.youtube.com/watch?v=jnhlldaNp_Y",
     "https://www.youtube.com/watch?v=7oVefMrL7WM",
     "https://www.youtube.com/watch?v=rK0CR3kUEsA",
-    "https://www.youtube.com/watch?v=9Ht5RZpzPqw"
+    "https://www.youtube.com/watch?v=9Ht5RZpzPqw",
+    "https://www.youtube.com/watch?v=4fndeDfaWCg"
 ]
 
 @bot.message_handler(commands = ["randommusic"])
