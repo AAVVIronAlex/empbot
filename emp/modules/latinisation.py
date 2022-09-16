@@ -2,6 +2,10 @@ from emp import bot
 import random
 import string
 
-def reply(update, content):
-    user_input = update.message.text
-    update.message.reply_text(f"The text you have entered {user_input}")
+@bot.message_handler(func=lambda message: True)
+def echo_message(message):
+  cid = message.chat.id
+  mid = message.message_id 
+  message_text = message.text 
+  user_id = message.from_user.id 
+  user_name = message.from_user.first_name 
