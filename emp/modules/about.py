@@ -1,6 +1,5 @@
 from emp import bot
 
-
 @bot.message_handler(commands = ["help"])
 def hello(message):
     bot.send_message(message.chat.id, "If you type /hello I will say hello.")

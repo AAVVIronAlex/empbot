@@ -11,7 +11,7 @@ JOKES = [
     "*Dad thinks you are gaming on the pc* Dad: Are you winning, son?  There is"
     " no winning with these syntax errors dad!",
     "What’s the best thing about Switzerland? I don’t know, but the flag is a big plus.",
-    "What is an astronaut’s favorite part on a computer? The space bar."
+    "What is an astronaut’s favorite part on a computer? The space bar.", "Why are iPhone chargers not called Apple Juice?!"
 ]
 
 ADJECTIVES = [
