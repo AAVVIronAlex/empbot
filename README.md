@@ -16,11 +16,11 @@ The URL to the bot: https://t.me/earthmapspicturesbot
 
 ## Future projects
 
-I plan to improve the bot as time goes by. Please do not hesitate and recommend functions that can be integrated into the bot. Also, please report bugs if you ever notice some.
+I plan to improve the bot as time goes by. Please do not hesitate and recommend functions that can be integrated into the bot. Also, please report bugs if you ever notice any.
 
 ## How to deploy
 
-Firstly clone the repository using the git clone `https://github.com/AAVVIronAlex/empbot` command.
+Firstly clone the repository using the `git clone https://github.com/AAVVIronAlex/empbot` command.
 
 To run this bot you will need an Bot Token from Telegram, to get that key go and chat with The BotFather (https://t.me/BotFather). Follow the instructions to create a bot, and then follow the instructions to generate a new Bot Token. You should add the Bot Token to the `__init__.py` file to the variable called `bot_token` replace the `os.getenv("BOT_TOKEN")` with the token in quotation marks.
 
