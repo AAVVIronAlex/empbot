@@ -140,6 +140,10 @@ def general(message):
 def sati(message):
     bot.send_message(message.chat.id, "https://instagram.fevn1-4.fna.fbcdn.net/v/t51.2885-15/sh0.08/e35/s640x640/261826967_121435980347228_7475127980642126532_n.webp.jpg?_nc_ht=instagram.fevn1-4.fna.fbcdn.net&_nc_cat=108&_nc_ohc=S5zcTTdxYdUAX_-Njsc&edm=AABBvjUBAAAA&ccb=7-4&ig_cache_key=MjcxODU2ODc0ODY5OTExNDY2Ng%3D%3D.2-ccb7-4&oh=00_AT-A1IwJlnfoqJlIMzROd7sJ21lZw4V3ROVUuq46i5cd5g&oe=62161B36&_nc_sid=83d603")
     bot.send_message(message.chat.id, "Satie Muradyan")
+
+@bot.message_handler(commands = ["halloween"])
+def sati(message):
+    bot.send_message(message.chat.id, "Fun fact my owner's birthday is on Hallween, lol.")
   
 # newpassword 2.0
 @bot.message_handler(commands = ["newpasswordultra"])
